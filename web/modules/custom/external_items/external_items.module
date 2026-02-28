@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function external_items_theme($existing, $type, $theme, $path) {
+  return [
+    'external_items_page' => [
+      'template' => 'external-items-page',
+      'variables' => [],
+    ],
+    'external_item_detail_page' => [
+      'template' => 'external-item-detail-page',
+      'variables' => [
+        'item_id' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,9 @@
+items:
+  css:
+    theme:
+      assets/styles.css: {}
+  js:
+    assets/items.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

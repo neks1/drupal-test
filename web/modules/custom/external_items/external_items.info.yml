@@ -1,0 +1,5 @@
+name: 'External Items'
+type: module
+description: 'POC: Drupal UI consuming a public GraphQL API via a proxy.'
+core_version_requirement: ^10 || ^11
+package: Custom

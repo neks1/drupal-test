@@ -1,0 +1,141 @@
+.external {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.external__header {
+  margin-bottom: 16px;
+}
+
+.external__title {
+  margin: 0 0 8px;
+  line-height: 1.2;
+}
+
+.external__subtitle {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.external__back {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.external__back:hover {
+  transform: translateX(-5px);
+}
+
+.external__back:focus-visible,
+.external a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+.external__cardTitle a:focus:not(:focus-visible),
+.external a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .external__content {
+    min-height: 629px;
+  }
+}
+
+.external__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .external__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+.external__card {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  padding: 14px;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+
+.external__card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 2px #000;
+}
+
+.external__cardTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.external__cardTitle a {
+  text-decoration: none;
+}
+
+.external__cardTitle a:hover {
+  text-decoration: underline;
+}
+
+.external__meta {
+  margin: 0;
+  opacity: 0.85;
+}
+
+.external__state {
+  padding: 14px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.external__kv {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  max-width: 720px;
+}
+
+.external__kv dt {
+  font-weight: 600;
+}
+
+.external__kv dd {
+  margin: 0;
+}
+
+.external__pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.external__btn {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.external__btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.external__btn:hover:not([disabled]) {
+  border-color: rgba(0, 0, 0, 0.35);
+  transform: scale(1.1);
+}

@@ -1,0 +1,35 @@
+external_items.items_page:
+  path: '/items'
+  defaults:
+    _controller: '\Drupal\external_items\Controller\ItemsPageController::listPage'
+    _title: 'Items'
+  requirements:
+    _permission: 'access content'
+
+external_items.item_detail_page:
+  path: '/items/{id}'
+  defaults:
+    _controller: '\Drupal\external_items\Controller\ItemsPageController::detailPage'
+    _title_callback: '\Drupal\external_items\Controller\ItemsPageController::detailTitle'
+  requirements:
+    _permission: 'access content'
+    id: '.+'
+
+external_items.api_items:
+  path: '/api/items'
+  defaults:
+    _controller: '\Drupal\external_items\Controller\ItemsApiController::list'
+  requirements:
+    _permission: 'access content'
+  options:
+    _format: 'json'
+
+external_items.api_item:
+  path: '/api/items/{id}'
+  defaults:
+    _controller: '\Drupal\external_items\Controller\ItemsApiController::detail'
+  requirements:
+    _permission: 'access content'
+    id: '.+'
+  options:
+    _format: 'json'

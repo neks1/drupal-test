@@ -1,0 +1,4 @@
+services:
+  external_items.countries_client:
+    class: Drupal\external_items\Service\CountriesGraphqlClient
+    arguments: ['@http_client']

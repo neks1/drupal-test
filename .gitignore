@@ -1,0 +1,29 @@
+# Vendor (Composer)
+vendor/
+
+# Node
+node_modules/
+
+# Drupal files
+web/sites/*/files/
+web/sites/*/private/
+
+# Local settings
+web/sites/*/settings.local.php
+
+# DDEV
+.ddev/db_snapshots/
+.ddev/.importdb/
+.ddev/.downloads/
+.ddev/.global_commands/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
